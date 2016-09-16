@@ -6,7 +6,7 @@ omg-cli/omg-linux register-plugin \
   -type product \
   -pluginpath omg-product-bundle/$PRODUCT_PLUGIN
 
-PRODUCT_NAME=$(printf ${PRODUCT_PLUGIN%%-*})
+PRODUCT_NAME=$(printf $PRODUCT_PLUGIN | sed 's,-plugin.*,,')
 
 omg-cli/omg-linux product-meta $PRODUCT_NAME | \
   awk '/^pivotal-/ {printf $NF}' > $OUTPUT_DIR/product_version
