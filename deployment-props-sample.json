@@ -1,0 +1,8 @@
+{
+  "bosh-cacert": "",
+  "bosh-client-id": "",
+  "bosh-client-secret": "",
+  "bosh-pass": "PASSWORD",
+  "bosh-url": "https://10.0.0.10",
+  "bosh-user": "admin",
+}
