@@ -21,7 +21,7 @@ bosh-cacert: |
   ...
   -----END CERTIFICATE-----
 bosh-pass: PASSWORD
-bosh-target: https://10.0.0.10
+bosh-url: https://10.0.0.10
 bosh-user: admin
 concourse-url: http://10.0.0.31:8080
 concourse-user: USERNAME

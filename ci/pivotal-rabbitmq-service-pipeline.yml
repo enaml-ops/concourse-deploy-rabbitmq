@@ -46,7 +46,7 @@ resources:
     client_id: {{bosh-client-id}}
     client_secret: {{bosh-client-secret}}
     deployment: rabbitmq
-    target: {{bosh-target}}
+    target: {{bosh-url}}
 - name: stemcells
   type: pivnet
   source:
@@ -210,7 +210,7 @@ jobs:
           BOSH_CLIENT_SECRET: {{bosh-client-secret}}
           BOSH_DEPLOYMENT_NAME: p-rabbitmq
           BOSH_ERRAND: broker-registrar
-          BOSH_TARGET: {{bosh-target}}
+          BOSH_TARGET: {{bosh-url}}
         inputs:
         - name: concourse-deploy-rabbitmq
         outputs:

@@ -1,7 +1,7 @@
 {
-  "bosh-cacert": "",
-  "bosh-client-id": "",
-  "bosh-client-secret": "",
+  "bosh-client-id": "UAA_CLIENT_ID_WITH_client_credentials_GRANT_TYPE",
+  "bosh-client-secret": "SHARED_SECRET",
+  "bosh-cacert": "-----BEGIN CERTIFICATE-----\n...\n...\n....----END CERTIFICATE-----\n",
   "bosh-pass": "PASSWORD",
   "bosh-url": "https://10.0.0.10",
   "bosh-user": "admin",
