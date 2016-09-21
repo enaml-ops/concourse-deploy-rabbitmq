@@ -14,6 +14,7 @@ omg-cli/omg-linux deploy-product \
   --print-manifest \
   --ssl-ignore \
   $PRODUCT_PLUGIN \
+  --deployment-name $DEPLOYMENT_NAME \
   --infer-from-cloud \
   --skip-ssl-verify \
   --stemcell-ver $STEMCELL_VERSION \

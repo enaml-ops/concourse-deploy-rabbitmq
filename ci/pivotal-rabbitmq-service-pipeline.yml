@@ -45,7 +45,7 @@ resources:
     ca_cert: {{bosh-cacert}}
     client_id: {{bosh-client-id}}
     client_secret: {{bosh-client-secret}}
-    deployment: rabbitmq
+    deployment: {{deployment-name}}
     target: {{bosh-url}}
 - name: stemcells
   type: pivnet
@@ -147,6 +147,7 @@ jobs:
           BOSH_CLIENT: {{bosh-user}}
           BOSH_CLIENT_SECRET: {{bosh-pass}}
           BOSH_CACERT: {{bosh-cacert}}
+          DEPLOYMENT_NAME: {{deployment-name}}
           PRODUCT_PLUGIN: {{product_plugin}}
           STEMCELL_VERSION: {{stemcell-version}}
           VAULT_ADDR: {{vault_addr}}
@@ -207,7 +208,7 @@ jobs:
           BOSH_CACERT: {{bosh-cacert}}
           BOSH_CLIENT: {{bosh-client-id}}
           BOSH_CLIENT_SECRET: {{bosh-client-secret}}
-          BOSH_DEPLOYMENT_NAME: p-rabbitmq
+          BOSH_DEPLOYMENT_NAME: {{deployment-name}}
           BOSH_ERRAND: broker-registrar
           BOSH_TARGET: {{bosh-url}}
         inputs:
