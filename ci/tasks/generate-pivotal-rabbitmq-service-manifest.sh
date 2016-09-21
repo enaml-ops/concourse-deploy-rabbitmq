@@ -16,7 +16,7 @@ omg-cli/omg-linux deploy-product \
   $PRODUCT_PLUGIN \
   --infer-from-cloud \
   --skip-ssl-verify \
-  --stemcell-version $STEMCELL_VERSION \
+  --stemcell-ver $STEMCELL_VERSION \
   --vault-domain $VAULT_ADDR \
   --vault-hash $VAULT_HASH_IP \
   --vault-hash $VAULT_HASH_PASSWORD \
