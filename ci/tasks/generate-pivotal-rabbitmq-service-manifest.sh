@@ -19,6 +19,7 @@ omg-cli/omg-linux deploy-product \
   --skip-ssl-verify \
   --stemcell-ver $STEMCELL_VERSION \
   --vault-domain $VAULT_ADDR \
+  --vault-hash $VAULT_HASH_ERT_IP \
   --vault-hash $VAULT_HASH_IP \
   --vault-hash $VAULT_HASH_PASSWORD \
   --vault-hash $VAULT_HASH_HOSTVARS \
