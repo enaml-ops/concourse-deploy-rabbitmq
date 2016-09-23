@@ -4,5 +4,5 @@
   "bosh-cacert": "-----BEGIN CERTIFICATE-----\n...\n...\n....----END CERTIFICATE-----\n",
   "bosh-pass": "PASSWORD",
   "bosh-url": "https://10.0.0.10",
-  "bosh-user": "admin",
+  "bosh-user": "admin"
 }
